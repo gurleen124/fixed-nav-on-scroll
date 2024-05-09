@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="lg:grid lg:grid-cols-3 lg:px-20 px-10 items-center shadow-md flex justify-between w-full bg-white bg-opacity-50" id="nav">
+        <img src="./images/logo.png" alt="logo" width="100px">
+        <button type="button" class="lg:hidden justify-end" id="toggle-btn"><i class="fa-solid fa-bars"></i></button>
+        <ul id="menu" class="lg:flex justify-evenly col-span-2 sm:col-span-1 *:font-medium *:text-lg absolute lg:relative bg-white lg:bg-transparent py-3 px-5 lg:p-0 divide-y lg:divide-y-0 border lg:border-0 right-10 top-16 lg:right-0 lg:top-0 hidden">
+            <li class="hover:text-orange-800"><a href="">Home</a></li>
+            <li class="hover:text-orange-800"><a href="">About</a></li>
+            <li class="hover:text-orange-800"><a href="">Services</a></li>
+            <li class="hover:text-orange-800"><a href="">Blog</a></li>
+            <li class="hover:text-orange-800"><a href="">Contact</a></li>
+        </ul>
+        <ul class="lg:flex justify-end gap-x-3 hidden">
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-whatsapp"></i></li>
+        </ul>
+    </nav>
+    <section class="h-screen w-[80vw] mx-auto text-8xl font-medium flex justify-center items-center">
+        Hero Section
+    </section>
+    <section class="text-8xl h-[50vh] font-medium flex justify-center items-center bg-red-500">
+        Welcome
+    </section>
+    <section class="text-8xl h-[50vh] font-medium flex justify-center items-center" id="about">
+        About Us
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
